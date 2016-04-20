@@ -17,7 +17,8 @@ public class Plus extends AbstractOperation implements BinaryOperation {
 
 	@Override
 	public float perform(float arg1, float arg2) {
-		return arg1 + arg2;
+		// bug that has been overseen for decades
+		return arg1 + arg2 + 1;
 	}
 
 	@Override
